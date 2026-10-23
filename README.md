@@ -26,7 +26,7 @@
 | **Интерфейс шины** | PCI Express 3.0 x8 | Практическая ПСП передачи Host-to-Device: **$\sim 6.4\text{ ГБ/с}$** |
 | **CPU** | **AMD Ryzen 5 5600H** (Zen 3, 6 ядер / 12 потоков, 3.3–4.2 ГГц) | Набор инструкций: **AVX2 + FMA3 + F16C** (*без AVX-512 и VBMI*) |
 | **Системная память (RAM)** | **32 GB DDR4-3200** (2 $\times$ 16 GB SO-DIMM Dual-Channel) | Измеренная потоковая скорость чтения: **$34.17\text{ ГБ/с}$** |
-| **ОС и тулчейн** | Windows 11 Home 64-bit | MSVC 14.41 (Visual Studio 2022), CUDA Toolkit 12.6, Ninja, CMake 3.30 |
+| **ОС и тулчейн** | **Windows 10 Pro 64-bit** (Build 19045) | MSVC 14.41 (Visual Studio 2022 Community), CUDA 12.6, Ninja 1.11.0, CMake 3.29.5 |
 | **Базовая модель** | **Gemma 4 12B** (Google DeepMind) | 48 трансформерных слоев, $d_{model}=3840$, $d_{ffn}=15360$, словарь 256k |
 
 ---
