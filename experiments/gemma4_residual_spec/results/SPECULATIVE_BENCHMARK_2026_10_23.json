@@ -1,0 +1,308 @@
+[
+  {
+    "name": "Baseline (Sweet spot, -ngl 37)",
+    "extra_args": [
+      "-ngl",
+      "37"
+    ],
+    "status": "SUCCESS",
+    "pp_ts": 37.4,
+    "tg_ts": 13.9,
+    "wall_time_s": 10.39,
+    "peak_vram_mib": 5817,
+    "peak_ram_mib": 13046,
+    "error": null
+  },
+  {
+    "name": "Baseline (-ngl 32)",
+    "extra_args": [
+      "-ngl",
+      "32"
+    ],
+    "status": "SUCCESS",
+    "pp_ts": 27.1,
+    "tg_ts": 10.6,
+    "wall_time_s": 12.03,
+    "peak_vram_mib": 5135,
+    "peak_ram_mib": 13126,
+    "error": null
+  },
+  {
+    "name": "Baseline (Conservative, -ngl 30)",
+    "extra_args": [
+      "-ngl",
+      "30"
+    ],
+    "status": "SUCCESS",
+    "pp_ts": 26.0,
+    "tg_ts": 9.7,
+    "wall_time_s": 12.55,
+    "peak_vram_mib": 4855,
+    "peak_ram_mib": 13143,
+    "error": null
+  },
+  {
+    "name": "Google MTP (-ngl 32, -ngld 99, n-max 1)",
+    "extra_args": [
+      "-md",
+      "D:\\localllamacpp\\models\\drafts\\MTP\\mtp-gemma-4-12b-it-Q8_0.gguf",
+      "--spec-type",
+      "draft-mtp",
+      "-ngl",
+      "32",
+      "-ngld",
+      "99",
+      "--spec-draft-n-max",
+      "1"
+    ],
+    "status": "SUCCESS",
+    "pp_ts": 28.2,
+    "tg_ts": 14.1,
+    "wall_time_s": 11.8,
+    "peak_vram_mib": 5635,
+    "peak_ram_mib": 13696,
+    "error": null
+  },
+  {
+    "name": "Google MTP (-ngl 32, -ngld 99, n-max 2)",
+    "extra_args": [
+      "-md",
+      "D:\\localllamacpp\\models\\drafts\\MTP\\mtp-gemma-4-12b-it-Q8_0.gguf",
+      "--spec-type",
+      "draft-mtp",
+      "-ngl",
+      "32",
+      "-ngld",
+      "99",
+      "--spec-draft-n-max",
+      "2"
+    ],
+    "status": "SUCCESS",
+    "pp_ts": 27.5,
+    "tg_ts": 17.1,
+    "wall_time_s": 10.87,
+    "peak_vram_mib": 5635,
+    "peak_ram_mib": 13716,
+    "error": null
+  },
+  {
+    "name": "Google MTP (-ngl 32, -ngld 99, n-max 4)",
+    "extra_args": [
+      "-md",
+      "D:\\localllamacpp\\models\\drafts\\MTP\\mtp-gemma-4-12b-it-Q8_0.gguf",
+      "--spec-type",
+      "draft-mtp",
+      "-ngl",
+      "32",
+      "-ngld",
+      "99",
+      "--spec-draft-n-max",
+      "4"
+    ],
+    "status": "SUCCESS",
+    "pp_ts": 27.2,
+    "tg_ts": 17.7,
+    "wall_time_s": 10.92,
+    "peak_vram_mib": 5637,
+    "peak_ram_mib": 13691,
+    "error": null
+  },
+  {
+    "name": "Google MTP (-ngl 30, -ngld 99, n-max 2)",
+    "extra_args": [
+      "-md",
+      "D:\\localllamacpp\\models\\drafts\\MTP\\mtp-gemma-4-12b-it-Q8_0.gguf",
+      "--spec-type",
+      "draft-mtp",
+      "-ngl",
+      "30",
+      "-ngld",
+      "99",
+      "--spec-draft-n-max",
+      "2"
+    ],
+    "status": "SUCCESS",
+    "pp_ts": 25.1,
+    "tg_ts": 15.5,
+    "wall_time_s": 11.5,
+    "peak_vram_mib": 5357,
+    "peak_ram_mib": 13708,
+    "error": null
+  },
+  {
+    "name": "Google MTP (-ngl 37, -ngld 0 [CPU], n-max 2)",
+    "extra_args": [
+      "-md",
+      "D:\\localllamacpp\\models\\drafts\\MTP\\mtp-gemma-4-12b-it-Q8_0.gguf",
+      "--spec-type",
+      "draft-mtp",
+      "-ngl",
+      "37",
+      "-ngld",
+      "0",
+      "--spec-draft-n-max",
+      "2"
+    ],
+    "status": "SUCCESS",
+    "pp_ts": 35.9,
+    "tg_ts": 16.5,
+    "wall_time_s": 11.02,
+    "peak_vram_mib": 5885,
+    "peak_ram_mib": 13641,
+    "error": null
+  },
+  {
+    "name": "Google MTP (-ngl 37, -ngld 99 [VRAM overflow attempt])",
+    "extra_args": [
+      "-md",
+      "D:\\localllamacpp\\models\\drafts\\MTP\\mtp-gemma-4-12b-it-Q8_0.gguf",
+      "--spec-type",
+      "draft-mtp",
+      "-ngl",
+      "37",
+      "-ngld",
+      "99",
+      "--spec-draft-n-max",
+      "2"
+    ],
+    "status": "FAILED",
+    "pp_ts": null,
+    "tg_ts": null,
+    "wall_time_s": 6.51,
+    "peak_vram_mib": 5807,
+    "peak_ram_mib": 13126,
+    "error": "0.05.247.420 E srv    load_model: failed to load draft model, 'D:\\localllamacpp\\models\\drafts\\MTP\\mtp-gemma-4-12b-it-Q8_0.gguf' | 0.05.248.774 E srv  llama_server: exiting due to model loading error | Loading model... Error: the server exited before becoming ready"
+  },
+  {
+    "name": "z-lab DFlash (-ngl 32, -ngld 99, n-max 2)",
+    "extra_args": [
+      "-md",
+      "D:\\localllamacpp\\models\\drafts\\gemma-4-12B-it-DFlash-Q4_K_M.gguf",
+      "--spec-type",
+      "draft-dflash",
+      "-ngl",
+      "32",
+      "-ngld",
+      "99",
+      "--spec-draft-n-max",
+      "2"
+    ],
+    "status": "SUCCESS",
+    "pp_ts": 24.2,
+    "tg_ts": 15.7,
+    "wall_time_s": 11.67,
+    "peak_vram_mib": 5967,
+    "peak_ram_mib": 14647,
+    "error": null
+  },
+  {
+    "name": "z-lab DFlash (-ngl 32, -ngld 99, n-max 4)",
+    "extra_args": [
+      "-md",
+      "D:\\localllamacpp\\models\\drafts\\gemma-4-12B-it-DFlash-Q4_K_M.gguf",
+      "--spec-type",
+      "draft-dflash",
+      "-ngl",
+      "32",
+      "-ngld",
+      "99",
+      "--spec-draft-n-max",
+      "4"
+    ],
+    "status": "SUCCESS",
+    "pp_ts": 25.0,
+    "tg_ts": 17.5,
+    "wall_time_s": 11.21,
+    "peak_vram_mib": 5967,
+    "peak_ram_mib": 14643,
+    "error": null
+  },
+  {
+    "name": "z-lab DFlash (-ngl 32, -ngld 99, n-max 8)",
+    "extra_args": [
+      "-md",
+      "D:\\localllamacpp\\models\\drafts\\gemma-4-12B-it-DFlash-Q4_K_M.gguf",
+      "--spec-type",
+      "draft-dflash",
+      "-ngl",
+      "32",
+      "-ngld",
+      "99",
+      "--spec-draft-n-max",
+      "8"
+    ],
+    "status": "SUCCESS",
+    "pp_ts": 22.9,
+    "tg_ts": 15.2,
+    "wall_time_s": 11.98,
+    "peak_vram_mib": 5967,
+    "peak_ram_mib": 14643,
+    "error": null
+  },
+  {
+    "name": "z-lab DFlash (-ngl 30, -ngld 99, n-max 2)",
+    "extra_args": [
+      "-md",
+      "D:\\localllamacpp\\models\\drafts\\gemma-4-12B-it-DFlash-Q4_K_M.gguf",
+      "--spec-type",
+      "draft-dflash",
+      "-ngl",
+      "30",
+      "-ngld",
+      "99",
+      "--spec-draft-n-max",
+      "2"
+    ],
+    "status": "SUCCESS",
+    "pp_ts": 24.0,
+    "tg_ts": 15.6,
+    "wall_time_s": 11.54,
+    "peak_vram_mib": 5945,
+    "peak_ram_mib": 14268,
+    "error": null
+  },
+  {
+    "name": "z-lab DFlash (-ngl 37, -ngld 0 [CPU], n-max 2)",
+    "extra_args": [
+      "-md",
+      "D:\\localllamacpp\\models\\drafts\\gemma-4-12B-it-DFlash-Q4_K_M.gguf",
+      "--spec-type",
+      "draft-dflash",
+      "-ngl",
+      "37",
+      "-ngld",
+      "0",
+      "--spec-draft-n-max",
+      "2"
+    ],
+    "status": "SUCCESS",
+    "pp_ts": 31.8,
+    "tg_ts": 17.4,
+    "wall_time_s": 11.02,
+    "peak_vram_mib": 5891,
+    "peak_ram_mib": 14876,
+    "error": null
+  },
+  {
+    "name": "DSpark (-ngl 30, -ngld 99, n-max 2)",
+    "extra_args": [
+      "-md",
+      "D:\\localllamacpp\\models\\drafts\\gemma4_12b-DSpark-Q4_K_M.gguf",
+      "--spec-type",
+      "draft-dspark",
+      "-ngl",
+      "30",
+      "-ngld",
+      "99",
+      "--spec-draft-n-max",
+      "2"
+    ],
+    "status": "FAILED",
+    "pp_ts": null,
+    "tg_ts": null,
+    "wall_time_s": 6.21,
+    "peak_vram_mib": 4847,
+    "peak_ram_mib": 13191,
+    "error": "0.05.008.086 E srv    load_model: failed to load draft model, 'D:\\localllamacpp\\models\\drafts\\gemma4_12b-DSpark-Q4_K_M.gguf' | 0.05.009.194 E srv  llama_server: exiting due to model loading error | Loading model... Error: the server exited before becoming ready"
+  }
+]

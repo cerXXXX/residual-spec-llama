@@ -1,0 +1,12 @@
+{
+  "variant": "llama_cpp_IQ2_M",
+  "model_file": "gemma-4-12b-it-UD-IQ2_M.gguf",
+  "size_gb": 4.21,
+  "wikitext_ppl": 2645.7010,
+  "wikitext_ppl_err": 154.34631,
+  "ngl": 99,
+  "vram_mb": 5177,
+  "speed_s_per_pass": 2.48,
+  "n_chunks": 8,
+  "seqlen": 2048
+}

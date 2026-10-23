@@ -1,0 +1,112 @@
+{
+  "L1.1_capital": {
+    "level": 1,
+    "prompt": "What is the capital of France? Answer in one short sentence.",
+    "content": "The capital of France is Paris.",
+    "reasoning": "",
+    "tokens": 8,
+    "time_sec": 2.02,
+    "tok_per_sec": 10.92,
+    "json_valid": null
+  },
+  "L1.2_arithmetic": {
+    "level": 1,
+    "prompt": "Calculate: 17 * 4 = ",
+    "content": "17 * 4 = 68",
+    "reasoning": "",
+    "tokens": 10,
+    "time_sec": 1.82,
+    "tok_per_sec": 9.73,
+    "json_valid": null
+  },
+  "L1.3_greeting": {
+    "level": 1,
+    "prompt": "Introduce yourself in two sentences.",
+    "content": "I am Gemma 4, a large language model with open weights developed by Google DeepMind. I can process text and images to assist you with a wide variety of tasks and questions.",
+    "reasoning": "",
+    "tokens": 38,
+    "time_sec": 4.98,
+    "tok_per_sec": 8.99,
+    "json_valid": null
+  },
+  "L2.1_palindrome": {
+    "level": 2,
+    "prompt": "Write a Python function 'is_palindrome(s: str) -> bool' that checks if a string is a palindrome, ignoring spaces, punctuation, and capitalization. Provide 2 assert tests.",
+    "content": "Here is the Python function along with the requested test cases.\n\nTo solve this, we use the `.isalnum()` method to filter out non-alphanumeric characters (spaces and punctuation) and `.lower()` to ensure the check is case-insensitive.\n\n```python\nimport string\n\ndef is_palindrome(s: str) -> bool:\n    \"\"\"\n    Checks if a string is a palindrome, ignoring spaces, \n    punctuation, and capitalization.\n    \"\"\"\n    # Filter the string: keep only alphanumeric characters and lowercase them\n    cleaned_chars = [char.lower() for char in s if char.isalnum()]\n    \n    # Join list into a string (optional, but good for clarity)\n    filtered_s = \"\".join(cleaned_chars)\n    \n    # Compare the string with its reverse\n    return filtered_s == filtered_s[::-1]\n\n# Assert tests\n# Test 1: A standard palindrome with mixed casing and punctuation\nassert is_palindrome(\"A man, a plan, a canal: Panama\") == True\n\n# Test 2: A non-palindrome\nassert is_palindrome(\"Hello World\") == False\n\nprint(\"All tests passed!\")\n```\n\n### Explanation:\n1.  **Filtering**: `char.isalnum()` returns `True` only if the character is a letter or a number. This automatically ignores spaces, commas, periods, and other symbols.\n2.  **Normalization**: `.lower()` ensures that 'A' and 'a' are treated as the same character.\n3.  **Slicing**: `filtered_s[::-1]` is the standard Pythonic way to reverse",
+    "reasoning": "",
+    "tokens": 350,
+    "time_sec": 38.8,
+    "tok_per_sec": 9.17,
+    "json_valid": null
+  },
+  "L2.2_sally": {
+    "level": 2,
+    "prompt": "Sally has 3 brothers. Each brother has 2 sisters. How many sisters does Sally have in total? Explain your answer briefly.",
+    "content": "Sally has **1 sister**.\n\n**Explanation:**\nSally and her sister are the two girls in the family. Each of the 3 brothers has the same 2 sisters (Sally and her sister). Therefore, Sally only has one sister.",
+    "reasoning": "",
+    "tokens": 50,
+    "time_sec": 5.17,
+    "tok_per_sec": 11.15,
+    "json_valid": null
+  },
+  "L2.3_sky_blue": {
+    "level": 2,
+    "prompt": "Explain in three clear bullet points why the sky appears blue during the day (Rayleigh scattering).",
+    "content": "Here is why the sky appears blue during the day explained in three clear points:\n\n*   **Sunlight is a Spectrum:** Although sunlight looks white, it is actually made up of all the colors of the rainbow (red, orange, yellow, green, blue, indigo, and violet). Each color travels as a wave of a different length.\n*   **Atmospheric Obstacles:** As sunlight enters Earth's atmosphere, it strikes molecules of nitrogen and oxygen. Because blue light travels in shorter, smaller waves, these molecules scatter the blue light much more easily and frequently than the longer waves (like red or yellow).\n*   **The Scattering Effect:** This process, called **Rayleigh scattering**, sends the scattered blue light in every direction. When you look up, your eyes catch this \"sprinkled\" blue light coming from every part of the sky, making the entire dome appear blue.",
+    "reasoning": "",
+    "tokens": 184,
+    "time_sec": 22.11,
+    "tok_per_sec": 8.8,
+    "json_valid": null
+  },
+  "L2.4_russian_idiom": {
+    "level": 2,
+    "prompt": "Переведи на английский язык и объясни смысл поговорки: 'Дело в шляпе'.",
+    "content": "### Перевод на английский язык\n\nУ этой поговорки нет одного прямого эквивалента, так как она используется в разных контекстах. В зависимости от ситуации, можно использовать следующие варианты:\n\n1.  **It’s a done deal.** (Самый близкий по смыслу вариант — когда решение принято и всё решено).\n2.  **It’s settled.** (Всё решено / вопрос закрыт).\n3.  **It’s a go.** (Когда проект или план официально одобрен и можно начинать).\n4.  **Everything is sorted.** (Всё улажено / всё в порядке).\n5.  **It’s in the bag.** (Идиома, означающая, что успех гарантирован, победа уже в кармане).\n\n---\n\n### Смысл поговорки\n\n**«Дело в шляпе»** — это устойчивое выражение, которое означает, что какое-то дело успешно завершено, вопрос решен, или решение было принято окончательно.\n\n**Основные нюансы значения:**\n*   **Успешное завершение:** Когда переговоры прошли успешно и вы получили желаемое.\n*   **Окончательное решение:** Когда обсуждения закончились и теперь нужно просто приступить к действиям.\n*   **Гарантированный успех:** Когда ситуация сложилась так, что результат уже предрешен в вашу пользу.\n\n**",
+    "reasoning": "",
+    "tokens": 300,
+    "time_sec": 34.79,
+    "tok_per_sec": 8.99,
+    "json_valid": null
+  },
+  "L3.1_rate_limiter": {
+    "level": 3,
+    "prompt": "Write a Python class 'SlidingWindowRateLimiter' that tracks requests per user within a rolling time window (e.g. 100 requests per 60 seconds). Implement thread-safety with threading.Lock, add type hints, docstrings, and handle edge cases (expired timestamps cleanup).",
+    "content": "To implement a sliding window rate limiter, the most efficient way to handle \"rolling\" windows is to store a list of timestamps for each user. When a new request arrives, we remove timestamps that fall outside the window before checking the count.\n\nHere is the production-ready implementation:\n\n```python\nimport time\nimport threading\nfrom collections import deque\nfrom typing import Dict, List\n\nclass SlidingWindowRateLimiter:\n    \"\"\"\n    A thread-safe rate limiter that enforces a maximum number of requests \n    within a rolling time window for each unique user.\n    \"\"\"\n\n    def __init__(self, max_requests: int, window_seconds: int):\n        \"\"\"\n        Initialize the rate limiter.\n\n        :param max_requests: Maximum number of allowed requests in the window.\n        :param window_seconds: The duration of the rolling window in seconds.\n        \"\"\"\n        self.max_requests = max_requests\n        self.window_seconds = window_seconds\n        \n        # Dictionary mapping user_id -> deque of timestamps\n        # Using deque for O(1) pops from the left (oldest timestamps)\n        self.user_requests: Dict[str, deque[float]] = {}\n        \n        # Thread safety lock\n        self.lock = threading.Lock()\n\n    def is_allowed(self, user_id: str) -> bool:\n        \"\"\"\n        Check if a request from a specific user is allowed.\n        \n        :param user_id: Unique identifier for the user.\n        :return: True if the request is allowed, False otherwise.\n        \"\"\"\n        current_time = time.time()\n\n        with self.lock:\n            # Initialize deque if user is new\n            if user_id not in self.user_requests:\n                self.user_requests[user_id] = deque()\n\n            timestamps = self.user_requests[user_id]\n\n            # 1. Cleanup: Remove timestamps that are outside the rolling window\n            # This handles the \"expired timestamps\" requirement.\n            while timestamps and (current_time - timestamps[0] > self.window_seconds):\n                timestamps.popleft()\n\n            # 2. Check limit\n            if len(timestamps) < self.max_requests:\n                # Record the current request\n                timestamps.append(current_time)\n                return True\n            else:\n                # Limit reached\n                return False\n\n    def cleanup_expired_users(self) -> None:\n        \"\"\"\n        Optional maintenance method to",
+    "reasoning": "",
+    "tokens": 550,
+    "time_sec": 62.27,
+    "tok_per_sec": 8.93,
+    "json_valid": null
+  },
+  "L3.2_river_crossing": {
+    "level": 3,
+    "prompt": "A farmer needs to cross a river with a wolf, a goat, and a cabbage. The boat can only carry the farmer and one item at a time. If left unattended, the wolf will eat the goat, and the goat will eat the cabbage. Provide a step-by-step solution explaining each crossing and the state of both riverbanks.",
+    "content": "To solve this puzzle, the farmer must ensure that the wolf and the goat are never left alone together, and the goat and the cabbage are never left alone together.\n\nHere is the step-by-step solution:\n\n### Initial State:\n*   **Left Bank:** Farmer, Wolf, Goat, Cabbage\n*   **Right Bank:** (Empty)\n\n---\n\n### Step 1: Take the Goat across\nThe farmer takes the goat to the other side. The wolf and cabbage are left behind (safe, as the wolf doesn't eat cabbage).\n*   **Action:** Farmer takes Goat $\\rightarrow$ Right Bank.\n*   **Left Bank:** Wolf, Cabbage\n*   **Right Bank:** Farmer, Goat\n\n### Step 2: Return alone\nThe farmer returns to the original side.\n*   **Action:** Farmer $\\leftarrow$ Left Bank.\n*   **Left Bank:** Farmer, Wolf, Cabbage\n*   **Right Bank:** Goat\n\n### Step 3: Take the Wolf across\nThe farmer takes the wolf to the other side.\n*   **Action:** Farmer takes Wolf $\\rightarrow$ Right Bank.\n*   **Left Bank:** Cabbage\n*   **Right Bank:** Farmer, Wolf, Goat\n\n### Step 4: Return with the Goat\n**Crucial Step:** The farmer cannot leave the wolf and goat together. He must bring the goat back to the starting side.\n*   **Action:** Farmer takes Goat $\\leftarrow$ Left Bank.\n*   **Left Bank:** Farmer, Goat, Cabbage\n*   **Right Bank:** Wolf\n\n### Step 5: Take the Cabbage across\nThe farmer leaves the goat and takes the cabbage to the other side.\n*   **Action:** Farmer takes Cabbage $\\rightarrow$ Right Bank.\n*   **Left Bank:** Goat\n*   **Right Bank:** Farmer, Wolf, Cabbage\n\n### Step 6: Return alone\nThe farmer returns to the starting side to get the final item.\n*   **Action:** Farmer $\\leftarrow$ Left Bank.\n*   **Left Bank:** Farmer, Goat\n*   **Right Bank:** Wolf, Cabbage\n\n### Step 7: Take the Goat across\nThe farmer takes the goat across one last time.\n*   **Action:** Farmer takes Goat $\\rightarrow$ Right Bank.\n*   **Left Bank:** (Empty)\n*   **Right Bank:** Farmer, Wolf, Goat, Cabbage\n\n---\n\n### Final State:\n*   **Left Bank:** (Empty)\n*   **Right Bank:** Farmer, Wolf, Goat, Cabbage\n\n**Success! Everyone",
+    "reasoning": "",
+    "tokens": 550,
+    "time_sec": 63.8,
+    "tok_per_sec": 8.72,
+    "json_valid": null
+  },
+  "L3.3_json_extraction": {
+    "level": 3,
+    "prompt": "Extract structured entities from this sentence into valid JSON without markdown fences: 'John Doe bought 3 units of RTX 4090 on March 15 for $1599 each from Newegg.' Schema: {buyer: str, items: [{name: str, quantity: int, price_usd: float}], merchant: str, date: str}.",
+    "content": "{\n  \"buyer\": \"John Doe\",\n  \"items\": [\n    {\n      \"name\": \"RTX 4090\",\n      \"quantity\": 3,\n      \"price_usd\": 1599.0\n    }\n  ],\n  \"merchant\": \"Newegg\",\n  \"date\": \"March 15\"\n}",
+    "reasoning": "",
+    "tokens": 84,
+    "time_sec": 9.19,
+    "tok_per_sec": 9.98,
+    "json_valid": true
+  },
+  "L3.4_flash_attention": {
+    "level": 3,
+    "prompt": "Подробно объясни архитектурный принцип механизма FlashAttention: чем он отличается от стандартного Scaled Dot-Product Attention, как используется тайлинг (tiling) в SRAM GPU и почему он снижает требования к объему памяти HBM с O(N^2) до O(N).",
+    "content": "Механизм **FlashAttention** — это алгоритмическая оптимизация стандартного механизма внимания (Attention), которая радикально меняет способ взаимодействия данных с памятью GPU.\n\nЧтобы понять его суть, нужно разделить проблему на две составляющие: **вычислительную сложность** (количество операций) и **пропускную способность памяти** (скорость передачи данных).\n\n---\n\n### 1. Стандартный Scaled Dot-Product Attention (SDPA)\n\nВ стандартном механизме внимания (как в классическом Transformer) вычисление выглядит так:\n$$\\text{Attention}(Q, K, V) = \\text{softmax}\\left(\\frac{QK^T}{\\sqrt{d_k}}\\right)V$$\n\n**Проблема стандартного подхода:**\nДля последовательности длиной $N$ матрица произведений $QK^T$ имеет размер $N \\times N$.\n1. **Вычисление:** Мы вычисляем все $N^2$ элементов матрицы внимания.\n2. **Хранение:** Мы записываем всю матрицу $N \\times N$ в память (HBM — высокоскоростная память видеокарты).\n3. **Softmax:** Мы читаем эту матрицу обратно, применяем Softmax и умножаем на $V$.\n\n**Сложность по памяти:** $O(N^2)$. Если длина последовательности $N=100,000$, матрица внимания требует колоссального объема памяти, который быстро превышает возможности GPU.\n\n---\n\n### 2. Архитектурный принцип FlashAttention\n\nFlashAttention не меняет математический результат (он выдает те же значения, что и стандартный Attention), но он меняет **порядок вычислений**.\n\nОсновная идея: **избежать записи и чтения промежуточной матрицы $N \\times N$ из медленной памяти HBM.**\n\nFlashAttention использует два ключевых принципа:\n1. **Tiling (Тайлинг):** Разбиение матриц на маленькие блоки.\n2. **Recomputation (Пересчет):** Вместо хранения промежуточных результатов мы пересчитываем их «на лету» во время обратного прохода (backpropagation).\n\n---\n\n### 3. Как используется Тайлинг (Tiling) в SRAM\n\nGPU имеет два типа памяти:\n*   **HBM (High Bandwidth Memory):** Большая емкость, но относительно низкая скорость доступа.\n*   **SRAM (Static RAM):** Очень маленькая емкость (на чипе), но экстремально высокая скорость доступа.\n\n**Как работает тайлинг в FlashAttention:**\nВместо того чтобы вычислять всю матрицу $N \\times N$ сразу, алгоритм разбивает матрицы $Q, K, V$ на маленькие блоки (тайлы), которые помещаются целиком в **SRAM",
+    "reasoning": "",
+    "tokens": 600,
+    "time_sec": 69.65,
+    "tok_per_sec": 8.7,
+    "json_valid": null
+  }
+}

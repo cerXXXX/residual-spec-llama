@@ -1,0 +1,60 @@
+{
+  "llama_cpp_Q4_K_M": [
+    {
+      "prompt": "Capital of France",
+      "response": "The capital of France is Paris.",
+      "gen_tok_per_sec": 8.6,
+      "prompt_tok_per_sec": 20.4,
+      "wall_time_sec": 19.48,
+      "peak_vram_mb": 4855.0,
+      "peak_ram_mb": 7489.5
+    },
+    {
+      "prompt": "Arithmetic",
+      "response": "17 * 4 = 68",
+      "gen_tok_per_sec": 8.3,
+      "prompt_tok_per_sec": 21.8,
+      "wall_time_sec": 8.66,
+      "peak_vram_mb": 4855.0,
+      "peak_ram_mb": 7488.5
+    },
+    {
+      "prompt": "Greeting",
+      "response": "I am Gemma 4, a large language model developed by Google DeepMind. I am an open weights model capable of processing text and images to assist",
+      "gen_tok_per_sec": 9.1,
+      "prompt_tok_per_sec": 21.1,
+      "wall_time_sec": 10.4,
+      "peak_vram_mb": 4855.0,
+      "peak_ram_mb": 7487.0
+    }
+  ],
+  "llama_cpp_IQ2_M": [
+    {
+      "prompt": "Capital of France",
+      "response": "The capital of France is Paris.",
+      "gen_tok_per_sec": 32.8,
+      "prompt_tok_per_sec": 91.9,
+      "wall_time_sec": 11.94,
+      "peak_vram_mb": 4767.0,
+      "peak_ram_mb": 4531.4
+    },
+    {
+      "prompt": "Arithmetic",
+      "response": "17 * 4 = 68",
+      "gen_tok_per_sec": 34.4,
+      "prompt_tok_per_sec": 175.2,
+      "wall_time_sec": 5.46,
+      "peak_vram_mb": 4765.0,
+      "peak_ram_mb": 4530.7
+    },
+    {
+      "prompt": "Greeting",
+      "response": "I am an AI language model designed to assist you with a wide variety of tasks, from answering questions to generating creative text. I aim to provide clear",
+      "gen_tok_per_sec": 34.9,
+      "prompt_tok_per_sec": 154.0,
+      "wall_time_sec": 5.99,
+      "peak_vram_mb": 4765.0,
+      "peak_ram_mb": 4528.7
+    }
+  ]
+}

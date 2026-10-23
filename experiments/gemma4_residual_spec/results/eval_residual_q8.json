@@ -1,0 +1,10 @@
+{
+  "variant": "residual_q8",
+  "wikitext_ppl": 3417.6851699573162,
+  "mmlu_pro_acc": 8.0,
+  "arc_challenge_acc": 21.0,
+  "samples": 100,
+  "ppl_chunks": 8,
+  "batch_size": 8,
+  "timestamp": 1792693719.1920066
+}

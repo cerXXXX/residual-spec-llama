@@ -1,0 +1,51 @@
+{
+  "timestamp": "2026-10-23T16:31:00",
+  "hardware": {
+    "gpu": "NVIDIA GeForce RTX 3060 Laptop (6144 MiB GDDR6, PCIe Gen3 x8)",
+    "cpu": "AMD Ryzen 5 5600H (6C/12T, AVX2, no AVX-512)",
+    "ram": "32 GB DDR4-3200 (Dual-channel)"
+  },
+  "models": {
+    "llama_cpp_Q4_K_M_ngl37": {
+      "format": "GGUF b11099",
+      "ngl": 37,
+      "tg_speed_tok_sec": 14.21,
+      "tg_sweep_max_tok_sec": 15.49,
+      "peak_vram_mb": 5267,
+      "peak_ram_mb": 7488,
+      "status": "Optimal practical configuration (Sweet spot)"
+    },
+    "llama_cpp_Q4_K_M_ngl30": {
+      "format": "GGUF b11099",
+      "ngl": 30,
+      "tg_speed_tok_sec": 8.7,
+      "peak_vram_mb": 4855,
+      "peak_ram_mb": 7489,
+      "status": "Conservative configuration with safe VRAM headroom"
+    },
+    "llama_cpp_IQ2_M_ngl99": {
+      "format": "GGUF b11099",
+      "ngl": 99,
+      "tg_speed_tok_sec": 34.0,
+      "peak_vram_mb": 4765,
+      "peak_ram_mb": 4530,
+      "status": "Fastest GGUF configuration (100% VRAM offload)"
+    },
+    "residual_q8_pytorch_streaming": {
+      "format": "PyTorch Reconstructed + GPU Streaming Hook",
+      "tg_speed_tok_sec": 0.18,
+      "sec_per_token": 5.65,
+      "peak_vram_mb": 2017,
+      "peak_ram_mb": 22510,
+      "status": "Research code: no C++/CUDA speculative runtime exists; streams layer-by-layer over PCIe"
+    },
+    "bf16_pytorch_streaming": {
+      "format": "PyTorch BF16 Ground Truth + GPU Streaming Hook",
+      "tg_speed_tok_sec": 0.25,
+      "sec_per_token": 3.94,
+      "peak_vram_mb": 2857,
+      "peak_ram_mb": 21280,
+      "status": "Cannot fit in 6GB VRAM directly; streaming yields ~0.25 tok/s"
+    }
+  }
+}

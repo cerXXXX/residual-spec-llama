@@ -1,0 +1,12 @@
+{
+  "variant": "llama_cpp_Q4_K_M",
+  "model_file": "gemma-4-12b-it-Q4_K_M.gguf",
+  "size_gb": 7.12,
+  "wikitext_ppl": 506.4554,
+  "wikitext_ppl_err": 31.23012,
+  "ngl": 30,
+  "vram_mb": 5267,
+  "speed_s_per_pass": 4.37,
+  "n_chunks": 8,
+  "seqlen": 2048
+}

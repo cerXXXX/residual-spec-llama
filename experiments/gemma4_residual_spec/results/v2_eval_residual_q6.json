@@ -1,0 +1,12 @@
+{
+  "variant": "residual_q6",
+  "wikitext_ppl": 607.9886718701034,
+  "arc_challenge_acc": 96.0,
+  "mmlu_pro_acc": 18.0,
+  "samples": 100,
+  "ppl_chunks": 8,
+  "batch_size": 8,
+  "temperature": 0.0,
+  "chat_template": "canonical_gemma4",
+  "timestamp": 1792702918.709387
+}

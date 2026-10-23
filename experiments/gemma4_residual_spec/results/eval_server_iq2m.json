@@ -1,0 +1,112 @@
+{
+  "L1.1_capital": {
+    "level": 1,
+    "prompt": "What is the capital of France? Answer in one short sentence.",
+    "content": "The capital of France is Paris.",
+    "reasoning": "",
+    "tokens": 8,
+    "time_sec": 0.68,
+    "tok_per_sec": 31.72,
+    "json_valid": null
+  },
+  "L1.2_arithmetic": {
+    "level": 1,
+    "prompt": "Calculate: 17 * 4 = ",
+    "content": "17 * 4 = **68**",
+    "reasoning": "",
+    "tokens": 11,
+    "time_sec": 0.43,
+    "tok_per_sec": 35.36,
+    "json_valid": null
+  },
+  "L1.3_greeting": {
+    "level": 1,
+    "prompt": "Introduce yourself in two sentences.",
+    "content": "I am a large language model, trained by Google. I am designed to assist you with tasks like writing, coding, and answering questions.",
+    "reasoning": "",
+    "tokens": 29,
+    "time_sec": 0.9,
+    "tok_per_sec": 36.3,
+    "json_valid": null
+  },
+  "L2.1_palindrome": {
+    "level": 2,
+    "prompt": "Write a Python function 'is_palindrome(s: str) -> bool' that checks if a string is a palindrome, ignoring spaces, punctuation, and capitalization. Provide 2 assert tests.",
+    "content": "To solve this problem, we need to normalize the string by removing all characters that are not alphanumeric (letters or numbers) and converting the remaining characters to lowercase.\n\nHere is the Python implementation:\n\n```python\nimport string\n\ndef is_palindrome(s: str) -> bool:\n    # Filter out non-alphanumeric characters and convert to lowercase\n    # This handles spaces, punctuation, and capitalization\n    clean_string = \"\".join([char.lower() for char in s if char.isalnum()]).replace(\" \", \"\")\n    # Actually, a more efficient way to handle \"ignoring spaces and punctuation\" \n    # is to use a generator or filter to keep only alphanumeric characters.\n    \n    # Refined implementation:\n    processed = \"\".join([char.lower() for char in s if char.isalnum()]).replace(\" \", \"\")\n    # Wait, the standard way to handle \"ignoring spaces and punctuation\" is:\n    # 1. Lowercase the string\n    # 2. Filter out anything that isn'1. isalpha() or isdigit()\n    \n    # Let's use a clean approach:\n    clean_s = \"\".join([c.lower() for c in s if c.isalnum()]).replace(\" \", \"\") # This is wrong logic\n    # Correct logic:\n    # 1. Lowercase\n    # 2. Keep only characters where .isalnum() is True\n    \n    # Final implementation:\n    # We use a list comprehension to keep only alphanumeric characters\n    # and then check if the result is equal to its reverse.\n    \n    # Re",
+    "reasoning": "",
+    "tokens": 350,
+    "time_sec": 9.79,
+    "tok_per_sec": 36.19,
+    "json_valid": null
+  },
+  "L2.2_sally": {
+    "level": 2,
+    "prompt": "Sally has 3 brothers. Each brother has 2 sisters. How many sisters does Sally have in total? Explain your answer briefly.",
+    "content": "Sally has **2 sisters**.\n\n**Explanation:**\nThe problem states that \"Each brother has 2 sisters.\" Since Sally is one of those sisters, and there are only 2 sisters in total, she is one of the two sisters. The \"total\" number of sisters is 2, not 3.",
+    "reasoning": "",
+    "tokens": 65,
+    "time_sec": 1.95,
+    "tok_per_sec": 36.18,
+    "json_valid": null
+  },
+  "L2.3_sky_blue": {
+    "level": 2,
+    "prompt": "Explain in three clear bullet points why the sky appears blue during the day (Rayleigh scattering).",
+    "content": "Here are the three key points explaining why the sky appears blue due to Rayleigh scattering:\n\n*   **Scattering of Light:** When sunlight enters the atmosphere, it hits molecules and particles of air. Because these particles are much smaller than the wavelength of light, the light doesn't just bounce off them; it \"scatters\" (deflects) in many different directions.\n*   **Wavelength Dependency:** Rayleigh scattering occurs because different wavelengths of light scatter at different rates. Short wavelengths (blue and violet) are scattered much more efficiently and intensely than long wavelengths (red and orange).\n*   **The \"Blue\" Result:** While the atmosphere scatters all colors, the blue light is scattered so much that it becomes visible to our eyes as a uniform haze. We see blue because the blue wavelengths are being scattered most effectively by the nitrogen and oxygen molecules in the air.",
+    "reasoning": "",
+    "tokens": 180,
+    "time_sec": 5.09,
+    "tok_per_sec": 36.25,
+    "json_valid": null
+  },
+  "L2.4_russian_idiom": {
+    "level": 2,
+    "prompt": "Переведи на английский язык и объясни смысл поговорки: 'Дело в шляпе'.",
+    "content": "Перевод и разбор этой фразы:\n\n### 1. Перевод на английский\nВ зависимости от контекста, есть несколько вариантов:\n\n*   **Done_** (Самый близкий по смыслу к «Дело в шляпе» — когда что-то уже решено или свершилось).\n*   **It's a done deal.** (Когда сделка или соглашение уже заключено).\n*   **It's settled.** (Когда решение принято и оно окончательно).\n*   **Case closed.** (В юридическом или формальном контексте — «дело закрыто/решено»).\n\n### 2. Смысл поговорки\nВыражение **«Дело в шляпе»** — это идиома, которая означает, что **решение принято, и оно окончательно не подлежит обсуждению.**\n\n**Разбор по смыслам:**\n*   **Окончательность:** Когда говорят «дело в шляпе», это значит, что все переговоры закончены, и теперь нужно просто выполнять то, что было решено.\n*   **Отсутствие выбора:** Это подчеркивает, что «выбор» уже сделан. Сююю, «шляпа» (в данном контексте) символизирует завершенность процесса.\n\n**Контекст использования:**\nОбычно это выражение используется в ситуации, когда решение принято в спешности",
+    "reasoning": "",
+    "tokens": 300,
+    "time_sec": 8.46,
+    "tok_per_sec": 36.06,
+    "json_valid": null
+  },
+  "L3.1_rate_limiter": {
+    "level": 3,
+    "prompt": "Write a Python class 'SlidingWindowRateLimiter' that tracks requests per user within a rolling time window (e.g. 100 requests per 60 seconds). Implement thread-safety with threading.Lock, add type hints, docstrings, and handle edge cases (expired timestamps cleanup).",
+    "content": "To implement a sliding window rate limiter, we use a **Sliding Window Log** approach. Unlike a \"Fixed Window\" (where the window resets), a \"Sliding Window\" tracks the exact timestamps of requests to ensure that at any given moment, the count of requests within the last $X$ seconds is less than the limit.\n\nHere is the production-ready implementation:/\n\n```python\nimport threading\nimport time\nfrom typing import Dict, List, Optional\nfrom collections import deque\n\nclass SlidingWindowRateLimiter:\n    \"\"\"\n    A thread-safe rate limiter that tracks requests per user using a sliding window.\n    It maintains a list of timestamps for each user and removes expired entries.\n    \"\"\"\n\n    def __init__(self, window_size_seconds: int, max_requests: int):\n        \"\"\"\n        :param window_size_seconds: The duration of the window (e.g., 60 seconds).\n        :param max_requests: The maximum number of requests allowed within that window.\n        \"\"\"\n        self.window_size_seconds = window_size_seconds\n        self.max_requests = max_requests\n        \n        # Dictionary mapping user_id to a deque of timestamps\n        self.user_history: Dict[str, deque[float]] = {}\n        \n        # Thread safety lock\n        self.lock = threading.Lock()\n\n    def is_allowed(self, user_id: str) -> bool:\n        \"\"\"\n        Checks if a request from a specific user is allowed based on the sliding window.\n        \n        :param user_id: Unique identifier for the user/client.\n        :return: True if the request is allowed, False if it is rate-limited.\n        \"\"\"\n        with self.lock:\n            current_time = time.time()\n            \n            # Initialize user if not present\n            if user__id_not_in_history := user_id not in self.user_history:\n                self.user_history[user_id] = deque()\n            \n            history = self.user_history[user_id]\n            \n            # 1. Cleanup: Remove timestamps that are older than (current_time - window_size)\n            # This handles the \"expired timestamps\" requirement.\n            while history and (current__time - history[0]) < (current_time - self.window_size_seconds):\n                # This logic is slightly wrong in the manual calculation, \n                # let's use a clearer logic",
+    "reasoning": "",
+    "tokens": 550,
+    "time_sec": 15.62,
+    "tok_per_sec": 35.64,
+    "json_valid": null
+  },
+  "L3.2_river_crossing": {
+    "level": 3,
+    "prompt": "A farmer needs to cross a river with a wolf, a goat, and a cabbage. The boat can only carry the farmer and one item at a time. If left unattended, the wolf will eat the goat, and the goat will eat the cabbage. Provide a step-by-step solution explaining each crossing and the state of both riverbanks.",
+    "content": "To solve this puzzle, the farmer must ensure that the \"predator\" and \"prey\" are never left alone together on a bank.\n\n**Initial State:**\n*   **Near Bank:** Farmer, Wolf, Goat, Cabbage\n*   **Far Bank:** (Empty)\n\n---\n\n### Step-by-Step Solution:\n\n**1. The Farmer takes the Goat to the Far Bank.**\n*   *Reason:* If he takes the Wolf, the Goat eats the Cabbage. If he takes the Cabbage, the Wolf eats the Goat.\n*   **Near Bank:** Wolf, Cabbage\n*   **Far Bank:** Farmer, Goat\n\n**2. The Farmer returns alone to the Near Bank.**\n*   **Near Bank:** Farmer, Wolf, Cabbage\n*   **Far Bank:** Goat\n\n**3. The Farmer takes the Wolf to the Far Bank.**\n*   **Near Bank:** Cabbage\n*   **Far Bank:** Farmer, Wolf, Goat (Wait! The Wolf and Goat are now together. The Farmer must take the Goat back.)\n\n**4. The Farmer takes the Goat back to the Near Bank.**\n*   *Reason:* He cannot leave the Wolf and Goat alone on the Far Bank.\n*   **Near Bank:** Farmer, Goat, Cabbage\n*   **Far Bank:** Wolf\n\n**5. The Farmer takes the Cabbage to the Far Bank.**\n*   **Near Bank:** Goat\n*   **Far Bank:** Farmer, Wolf, Cabbage (The Wolf is safe because it doesn't eat the Cabbage).\n\n**6. The Farmer returns alone to the Near Bank.**\n*   **Near Bank:** Farmer, Goat\n*   **Far Bank:** Wolf, Cabbage\n\n**7. The Farmer takes the Goat to the Far Bank.**\n*   **Near Bank:** (Empty)\n*   **Far Bank:** Farmer, Wolf, Goat, Cabbage\n\n---\n\n### Final State:\n**All items are safely on the Far Bank.**\n\n**Summary of the logic:**\nThe key is the **Step 4** maneuver: The farmer must bring the Goat back to the starting bank to \"swap\" it for the Cabbage. This ensures that the Wolf and the Cabbage are never left alone with the Goat.",
+    "reasoning": "",
+    "tokens": 480,
+    "time_sec": 13.72,
+    "tok_per_sec": 35.56,
+    "json_valid": null
+  },
+  "L3.3_json_extraction": {
+    "level": 3,
+    "prompt": "Extract structured entities from this sentence into valid JSON without markdown fences: 'John Doe bought 3 units of RTX 4090 on March 15 for $1599 each from Newegg.' Schema: {buyer: str, items: [{name: str, quantity: int, price_usd: float}], merchant: str, date: str}.",
+    "content": "{\n  \"buyer\": \"John Doe\",\n  \"items\": [\n    {\n      \"name\": \"RTX 4090\",\n      \"quantity\": 3,\n      \"price_usd\": 1599.0\n    }\n  ],\n  \"merchant\": \"Newegg\",\n  \"date\": \"March 15\"\n}",
+    "reasoning": "",
+    "tokens": 84,
+    "time_sec": 2.57,
+    "tok_per_sec": 35.74,
+    "json_valid": true
+  },
+  "L3.4_flash_attention": {
+    "level": 3,
+    "prompt": "Подробно объясни архитектурный принцип механизма FlashAttention: чем он отличается от стандартного Scaled Dot-Product Attention, как используется тайлинг (tiling) в SRAM GPU и почему он снижает требования к объему памяти HBM с O(N^2) до O(N).",
+    "content": "Механизм **FlashAttention** — это не изменение алгоритма вычисления внимания, а **стратегия эффективного управления ресурсами** (памятью и вычислителем).\n\nЧтобы понять архитектурный принцип, нужно разделиться на два уровня: **алгоритмический** (как мы считаем внимание) и **архитектурный** (как мы управляем данными в памяти GPU).\n\n---\n\n### 1. Разница между Scaled Dot-Product Attention и FlashAttention\n\nНа самом деле, **FlashAttention не меняет формулу.** Она использует тот же самый расчет:\n$$ \\text{Attention}(Q, K, V) = \\text{softmax}(\\frac{QK^T/ \\sqrt{d_k}}{\\sqrt{d_k}}) \\cdot \\text{V} $$\n\n**В чем разница?**\n*   **Standard Attention:** Вычисляет всю матрицу внимания целиком. Если последовательность длиной $N$ имеет $N$ токенов, то матрица внимания размером $N \\times N$ занимает огромного объема памяти.\n*   **FlashAttention:** Вместо того, чтобы вычислять всю матрицу $N \\times N$ сразу, она разбивает последовательность на **блоки (chunks)**. Она вычисляет внимание для каждой части последовательности отдельно, но «на лету» обновляет веса.\n\n**Ключевой архитектурный принцип:** FlashAttention превращает «вычисление всей матрицы» в «серию последовательных вычислений мелких блоков».\n\n---\n\n### 2. Использование Tiling (Тайлинг) в SRAM GPU\n\nЧтобы понять, как это работает, нужно понимать иерархию памяти в GPU:\n1.  **HBM (High Bandwidth Memory):** Медленная, огромная память (где хранятся веса модели).\n2.  **SRAM (Shared Memory / Registers):** Очень быстрая, но маленькая память внутри ядра GPU.\n\n**Проблема стандартного Attention:** Если последовательность $N$ большая, матрица $N \\times N$ не влезает в SRAM. Если мы будем считать её в HBM, GPU «задохнется» от медленного чтения данных (Memory Bound).\n\n**Как работает Tiling в FlashAttention:**\nАлгоритм разбивает последовательность на мелкие блоки (например, по 64 или 128 токенов). \n1.  **Tiling** — это процесс разбиения данных так, чтобы они помещались в кэш (SRAM).\n2.  Вместо того, чтобы хранить всю матрицу $N \\times N$, мы берем «тайл» (кусок) из $Q$ и $K$.\n3.  Мы вычисляем внимание для этого кусочка и сразу умно",
+    "reasoning": "",
+    "tokens": 600,
+    "time_sec": 17.16,
+    "tok_per_sec": 35.3,
+    "json_valid": null
+  }
+}

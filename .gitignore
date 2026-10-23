@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+
+# Large Model Weights and Tensors
+*.pt
+*.safetensors
+*.gguf
+*.bin
+weights/
+
+# Build and logs
+build/
+*.log
+*.tmp

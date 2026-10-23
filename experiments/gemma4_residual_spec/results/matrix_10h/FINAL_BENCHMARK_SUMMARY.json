@@ -1,0 +1,448 @@
+{
+  "metadata": {
+    "benchmark_title": "Gemma 4 12B Residual Speculative Decoding Validation Matrix",
+    "timestamp": "2026-10-23T15:46:53.386612",
+    "hardware": {
+      "gpu": "NVIDIA GeForce RTX 3060 Laptop (6144 MiB GDDR6, PCIe Gen3 x8)",
+      "cpu": "AMD Ryzen 5 5600H (6 cores / 12 threads, AVX2, no AVX-512)",
+      "ram": "32 GB DDR4-3200 (dual-channel)"
+    },
+    "dataset": {
+      "wikitext_2": "16 chunks x 2048 tokens, stride 512, with <bos>",
+      "arc_challenge": "1,172 questions (100% of official test split)",
+      "mmlu_pro": "700 questions (50 per category across 14 stratified categories)"
+    }
+  },
+  "matrix": {
+    "residual_q8": {
+      "wikitext_ppl": 1024.1729,
+      "arc_challenge": {
+        "accuracy": 90.1,
+        "correct": 1056,
+        "total": 1172
+      },
+      "mmlu_pro": {
+        "accuracy": 36.71,
+        "correct": 257,
+        "total": 700,
+        "categories": {
+          "biology": {
+            "acc": 70.0,
+            "correct": 35,
+            "total": 50
+          },
+          "business": {
+            "acc": 28.0,
+            "correct": 14,
+            "total": 50
+          },
+          "chemistry": {
+            "acc": 10.0,
+            "correct": 5,
+            "total": 50
+          },
+          "computer science": {
+            "acc": 42.0,
+            "correct": 21,
+            "total": 50
+          },
+          "economics": {
+            "acc": 68.0,
+            "correct": 34,
+            "total": 50
+          },
+          "engineering": {
+            "acc": 8.0,
+            "correct": 4,
+            "total": 50
+          },
+          "health": {
+            "acc": 28.0,
+            "correct": 14,
+            "total": 50
+          },
+          "history": {
+            "acc": 52.0,
+            "correct": 26,
+            "total": 50
+          },
+          "law": {
+            "acc": 40.0,
+            "correct": 20,
+            "total": 50
+          },
+          "math": {
+            "acc": 20.0,
+            "correct": 10,
+            "total": 50
+          },
+          "other": {
+            "acc": 40.0,
+            "correct": 20,
+            "total": 50
+          },
+          "philosophy": {
+            "acc": 44.0,
+            "correct": 22,
+            "total": 50
+          },
+          "physics": {
+            "acc": 10.0,
+            "correct": 5,
+            "total": 50
+          },
+          "psychology": {
+            "acc": 54.0,
+            "correct": 27,
+            "total": 50
+          }
+        }
+      },
+      "status": "completed"
+    },
+    "residual_q6": {
+      "wikitext_ppl": 1048.4604,
+      "arc_challenge": {
+        "accuracy": 89.93,
+        "correct": 1054,
+        "total": 1172
+      },
+      "mmlu_pro": {
+        "accuracy": 36.0,
+        "correct": 252,
+        "total": 700,
+        "categories": {
+          "biology": {
+            "acc": 72.0,
+            "correct": 36,
+            "total": 50
+          },
+          "business": {
+            "acc": 26.0,
+            "correct": 13,
+            "total": 50
+          },
+          "chemistry": {
+            "acc": 8.0,
+            "correct": 4,
+            "total": 50
+          },
+          "computer science": {
+            "acc": 40.0,
+            "correct": 20,
+            "total": 50
+          },
+          "economics": {
+            "acc": 68.0,
+            "correct": 34,
+            "total": 50
+          },
+          "engineering": {
+            "acc": 8.0,
+            "correct": 4,
+            "total": 50
+          },
+          "health": {
+            "acc": 20.0,
+            "correct": 10,
+            "total": 50
+          },
+          "history": {
+            "acc": 50.0,
+            "correct": 25,
+            "total": 50
+          },
+          "law": {
+            "acc": 36.0,
+            "correct": 18,
+            "total": 50
+          },
+          "math": {
+            "acc": 22.0,
+            "correct": 11,
+            "total": 50
+          },
+          "other": {
+            "acc": 42.0,
+            "correct": 21,
+            "total": 50
+          },
+          "philosophy": {
+            "acc": 46.0,
+            "correct": 23,
+            "total": 50
+          },
+          "physics": {
+            "acc": 10.0,
+            "correct": 5,
+            "total": 50
+          },
+          "psychology": {
+            "acc": 56.0,
+            "correct": 28,
+            "total": 50
+          }
+        }
+      },
+      "status": "completed"
+    },
+    "base_b2": {
+      "wikitext_ppl": 6613.5444,
+      "arc_challenge": {
+        "accuracy": 68.6,
+        "correct": 804,
+        "total": 1172
+      },
+      "mmlu_pro": {
+        "accuracy": 25.14,
+        "correct": 176,
+        "total": 700,
+        "categories": {
+          "biology": {
+            "acc": 50.0,
+            "correct": 25,
+            "total": 50
+          },
+          "business": {
+            "acc": 30.0,
+            "correct": 15,
+            "total": 50
+          },
+          "chemistry": {
+            "acc": 10.0,
+            "correct": 5,
+            "total": 50
+          },
+          "computer science": {
+            "acc": 42.0,
+            "correct": 21,
+            "total": 50
+          },
+          "economics": {
+            "acc": 34.0,
+            "correct": 17,
+            "total": 50
+          },
+          "engineering": {
+            "acc": 30.0,
+            "correct": 15,
+            "total": 50
+          },
+          "health": {
+            "acc": 12.0,
+            "correct": 6,
+            "total": 50
+          },
+          "history": {
+            "acc": 10.0,
+            "correct": 5,
+            "total": 50
+          },
+          "law": {
+            "acc": 14.0,
+            "correct": 7,
+            "total": 50
+          },
+          "math": {
+            "acc": 22.0,
+            "correct": 11,
+            "total": 50
+          },
+          "other": {
+            "acc": 28.0,
+            "correct": 14,
+            "total": 50
+          },
+          "philosophy": {
+            "acc": 20.0,
+            "correct": 10,
+            "total": 50
+          },
+          "physics": {
+            "acc": 22.0,
+            "correct": 11,
+            "total": 50
+          },
+          "psychology": {
+            "acc": 28.0,
+            "correct": 14,
+            "total": 50
+          }
+        }
+      },
+      "status": "completed"
+    },
+    "llama_cpp_Q4_K_M": {
+      "wikitext_ppl": 1232.4489,
+      "arc_challenge": {
+        "accuracy": 92.58,
+        "correct": 1085,
+        "total": 1172
+      },
+      "mmlu_pro": {
+        "accuracy": 32.43,
+        "correct": 227,
+        "total": 700,
+        "categories": {
+          "biology": {
+            "acc": 62.0,
+            "correct": 31,
+            "total": 50
+          },
+          "business": {
+            "acc": 20.0,
+            "correct": 10,
+            "total": 50
+          },
+          "chemistry": {
+            "acc": 6.0,
+            "correct": 3,
+            "total": 50
+          },
+          "computer science": {
+            "acc": 38.0,
+            "correct": 19,
+            "total": 50
+          },
+          "economics": {
+            "acc": 60.0,
+            "correct": 30,
+            "total": 50
+          },
+          "engineering": {
+            "acc": 8.0,
+            "correct": 4,
+            "total": 50
+          },
+          "health": {
+            "acc": 16.0,
+            "correct": 8,
+            "total": 50
+          },
+          "history": {
+            "acc": 50.0,
+            "correct": 25,
+            "total": 50
+          },
+          "law": {
+            "acc": 20.0,
+            "correct": 10,
+            "total": 50
+          },
+          "math": {
+            "acc": 22.0,
+            "correct": 11,
+            "total": 50
+          },
+          "other": {
+            "acc": 40.0,
+            "correct": 20,
+            "total": 50
+          },
+          "philosophy": {
+            "acc": 46.0,
+            "correct": 23,
+            "total": 50
+          },
+          "physics": {
+            "acc": 8.0,
+            "correct": 4,
+            "total": 50
+          },
+          "psychology": {
+            "acc": 58.0,
+            "correct": 29,
+            "total": 50
+          }
+        }
+      },
+      "status": "completed"
+    },
+    "llama_cpp_IQ2_M": {
+      "wikitext_ppl": 14381.0219,
+      "arc_challenge": {
+        "accuracy": 83.87,
+        "correct": 983,
+        "total": 1172
+      },
+      "mmlu_pro": {
+        "accuracy": 29.43,
+        "correct": 206,
+        "total": 700,
+        "categories": {
+          "biology": {
+            "acc": 64.0,
+            "correct": 32,
+            "total": 50
+          },
+          "business": {
+            "acc": 24.0,
+            "correct": 12,
+            "total": 50
+          },
+          "chemistry": {
+            "acc": 4.0,
+            "correct": 2,
+            "total": 50
+          },
+          "computer science": {
+            "acc": 34.0,
+            "correct": 17,
+            "total": 50
+          },
+          "economics": {
+            "acc": 56.0,
+            "correct": 28,
+            "total": 50
+          },
+          "engineering": {
+            "acc": 8.0,
+            "correct": 4,
+            "total": 50
+          },
+          "health": {
+            "acc": 26.0,
+            "correct": 13,
+            "total": 50
+          },
+          "history": {
+            "acc": 42.0,
+            "correct": 21,
+            "total": 50
+          },
+          "law": {
+            "acc": 28.0,
+            "correct": 14,
+            "total": 50
+          },
+          "math": {
+            "acc": 12.0,
+            "correct": 6,
+            "total": 50
+          },
+          "other": {
+            "acc": 36.0,
+            "correct": 18,
+            "total": 50
+          },
+          "philosophy": {
+            "acc": 20.0,
+            "correct": 10,
+            "total": 50
+          },
+          "physics": {
+            "acc": 10.0,
+            "correct": 5,
+            "total": 50
+          },
+          "psychology": {
+            "acc": 48.0,
+            "correct": 24,
+            "total": 50
+          }
+        }
+      },
+      "status": "completed"
+    }
+  }
+}

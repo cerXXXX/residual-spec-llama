@@ -1,0 +1,9 @@
+{
+  "variant": "llama_cpp_IQ2_M",
+  "arc_challenge_acc": 80.0,
+  "mmlu_pro_acc": 13.0,
+  "samples": 100,
+  "temperature": 0.0,
+  "engine": "llama.cpp",
+  "timestamp": 1792701067.8351572
+}
