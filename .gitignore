@@ -15,3 +15,5 @@ weights/
 build/
 *.log
 *.tmp
+
+*.exe
